@@ -4,10 +4,56 @@
 <head>
     <title></title>
     <link href="public/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-
+    <nav class="row navbar bg-dark justify-content-center">
+        <h1>Weather Dashboard</h1>
+    </nav>
+    <div class="row">
+        <form class="container card column col-3">
+            <label><b>Search For A City:</b></label>
+            <br>
+            <div class="row">
+                <input class="col-9" type="text">
+                <input class="btn btn-primary col-3" type="submit" value="🔎">
+            </div>
+            <div class="recentSearch btn-toolbar"></div>
+        </form>
+        <div class="column col-9">
+            <section class="card container column">
+                <div class="row">
+                    <h2 class="cityDate">City And Date!</h2>
+                    <img src="" class="iconCity"></img>
+                </div>
+                <br>
+                <div class="temp">Temperature!</div>
+                <br>
+                <div class="humidity">Humidity!</div>
+                <br>
+                <div class="speed">Speed!</div>
+                <br>
+                <div class="UV card col-1">UV!</div>
+                <br>
+            </section>
+            <section class="card container">
+                <div>
+                    <h2>5-Day Forecast:</h2>
+                </div>
+                <div class="row">
+                    <div class="day 1 col-2">Day 1</div>
+                    <div class="day 2 col-2">Day 2</div>
+                    <div class="day 3 col-2">Day 3</div>
+                    <div class="day 4 col-2">Day 4</div>
+                    <div class="day 5 col-2">Day 5</div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="public/index.js"></script>
 </body>
 

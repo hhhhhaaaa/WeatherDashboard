@@ -9,4 +9,5 @@ img {
 .day {
     color: white;
     background-color: #A0A3FF;
+    white-space: pre-line;
 }
